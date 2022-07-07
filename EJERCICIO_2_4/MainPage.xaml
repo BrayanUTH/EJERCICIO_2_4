@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct ="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="EJERCICIO_2_4.MainPage">
+
+    <StackLayout Padding="15">
+        <Frame Padding="5"
+               HasShadow="False">
+            <xct:MediaElement 
+                       x:Name="elementVideo" 
+                       BackgroundColor="#969697" 
+                       AutoPlay="False"
+                       Aspect="AspectFill"
+                       ShowsPlaybackControls="True"
+                        HeightRequest="320"/>
+        </Frame>
+
+        <Button Text="Grabar Video"
+                CornerRadius="10"
+                x:Name="BtnGrabarVideo"
+                Clicked="BtnGrabarVideo_Clicked"
+                VerticalOptions="EndAndExpand"/>
+    </StackLayout>
+
+</ContentPage>
